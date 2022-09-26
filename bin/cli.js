@@ -110,6 +110,13 @@ async function generateSchema(pathToSpec) {
     exportType: flags.exportType,
     supportArrayLength: flags.supportArrayLength,
     pathParamsAsTypes: flags.pathParamsAsTypes,
+    // Configure openapiTS with custom formatter.
+    // If node.format is date or date-time, use JavaScript Date type.
+    formatter: (node) => {
+      if (node.format === "date" || node.format === "date-time") {
+        return "Date";
+      }
+    },
   });
 
   // output

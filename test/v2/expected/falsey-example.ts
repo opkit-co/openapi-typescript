@@ -4,18 +4,18 @@
  */
 
 export interface paths {
-  '/test': {
+  "/test": {
     get: {
       parameters: {
         query: {
-          search: string
-        }
-      }
+          search: string;
+        };
+      };
       responses: {
-        200: unknown
-      }
-    }
-  }
+        200: unknown;
+      };
+    };
+  };
 }
 
 export interface definitions {
@@ -24,13 +24,13 @@ export interface definitions {
      * @default false
      * @example false
      */
-    isEnabled?: boolean
+    isEnabled?: boolean;
     /**
      * @default 0
      * @example 0
      */
-    count?: number
-  }
+    count?: number;
+  };
 }
 
 export interface operations {}

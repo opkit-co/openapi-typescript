@@ -4,47 +4,47 @@
  */
 
 export type paths = {
-  '/v1/getUser2': {
+  "/v1/getUser2": {
     /** UserController.getUser2 */
-    get: operations['UserController.getUser2.DjHhjSamaD']
-  }
-}
+    get: operations["UserController.getUser2.DjHhjSamaD"];
+  };
+};
 
 export type components = {
   schemas: {
-    IUserWithId: components['schemas']['Partial<Pick<IUser,"id">>'] | string
+    IUserWithId: components["schemas"]['Partial<Pick<IUser,"id">>'] | string;
     'Partial<Pick<IUser,"id">>': {
-      id?: number
-    }
+      id?: number;
+    };
     IUserWithName: {
-      name: string
-    }
+      name: string;
+    };
     IUser: {
-      id: number
-      name?: string
-    }
-  }
-}
+      id: number;
+      name?: string;
+    };
+  };
+};
 
 export type operations = {
   /** UserController.getUser2 */
-  'UserController.getUser2.DjHhjSamaD': {
+  "UserController.getUser2.DjHhjSamaD": {
     parameters: {
       query: {
-        param1?: number
-        param2?: string | components['schemas']['IUserWithId']
-        param3?: string | components['schemas']['IUserWithName']
-      }
-    }
+        param1?: number;
+        param2?: string | components["schemas"]["IUserWithId"];
+        param3?: string | components["schemas"]["IUserWithName"];
+      };
+    };
     responses: {
       /** Successful response */
       200: {
         content: {
-          'application/json': unknown
-        }
-      }
-    }
-  }
-}
+          "application/json": unknown;
+        };
+      };
+    };
+  };
+};
 
-export type external = {}
+export type external = {};

@@ -4,19 +4,19 @@
  */
 
 export interface paths {
-  '/test': {
+  "/test": {
     get: {
       parameters: {
         query: {
-          isEnabled: boolean
-          count: number
-        }
-      }
+          isEnabled: boolean;
+          count: number;
+        };
+      };
       responses: {
-        200: unknown
-      }
-    }
-  }
+        200: unknown;
+      };
+    };
+  };
 }
 
 export interface components {
@@ -26,14 +26,14 @@ export interface components {
        * @default false
        * @example false
        */
-      isEnabled?: boolean
+      isEnabled?: boolean;
       /**
        * @default 0
        * @example 0
        */
-      count?: number
-    } & { [key: string]: unknown }
-  }
+      count?: number;
+    } & { [key: string]: unknown };
+  };
 }
 
 export interface operations {}

@@ -4,18 +4,18 @@
  */
 
 export interface paths {
-  readonly '/test': {
+  readonly "/test": {
     readonly get: {
       readonly parameters: {
         readonly query: {
-          readonly search: string
-        }
-      }
+          readonly search: string;
+        };
+      };
       readonly responses: {
-        readonly 200: unknown
-      }
-    }
-  }
+        readonly 200: unknown;
+      };
+    };
+  };
 }
 
 export interface definitions {
@@ -24,13 +24,13 @@ export interface definitions {
      * @default false
      * @example false
      */
-    readonly isEnabled?: boolean
+    readonly isEnabled?: boolean;
     /**
      * @default 0
      * @example 0
      */
-    readonly count?: number
-  }
+    readonly count?: number;
+  };
 }
 
 export interface operations {}

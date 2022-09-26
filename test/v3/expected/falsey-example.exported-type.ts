@@ -4,20 +4,20 @@
  */
 
 export type paths = {
-  '/test': {
+  "/test": {
     get: {
       parameters: {
         query: {
-          isEnabled: boolean
-          count: number
-        }
-      }
+          isEnabled: boolean;
+          count: number;
+        };
+      };
       responses: {
-        200: unknown
-      }
-    }
-  }
-}
+        200: unknown;
+      };
+    };
+  };
+};
 
 export type components = {
   schemas: {
@@ -26,16 +26,16 @@ export type components = {
        * @default false
        * @example false
        */
-      isEnabled?: boolean
+      isEnabled?: boolean;
       /**
        * @default 0
        * @example 0
        */
-      count?: number
-    }
-  }
-}
+      count?: number;
+    };
+  };
+};
 
-export type operations = {}
+export type operations = {};
 
-export type external = {}
+export type external = {};
