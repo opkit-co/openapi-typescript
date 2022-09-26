@@ -4,26 +4,26 @@
  */
 
 export interface paths {
-  readonly '/cats': {
+  readonly "/cats": {
     readonly post: {
       readonly responses: {
         readonly 200: {
           readonly content: {
-            readonly 'application/json': {
-              readonly id: string
-              readonly name: string
+            readonly "application/json": {
+              readonly id: string;
+              readonly name: string;
               readonly colors:
                 | readonly string[]
                 | readonly {
-                    readonly id: string
-                    readonly name: string
-                  }[]
-            }
-          }
-        }
-      }
-    }
-  }
+                    readonly id: string;
+                    readonly name: string;
+                  }[];
+            };
+          };
+        };
+      };
+    };
+  };
 }
 
 export interface components {}

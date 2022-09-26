@@ -4,47 +4,47 @@
  */
 
 export interface paths {
-  '/v1/getUser2': {
+  "/v1/getUser2": {
     /** UserController.getUser2 */
-    get: operations['UserController.getUser2.DjHhjSamaD']
-  }
+    get: operations["UserController.getUser2.DjHhjSamaD"];
+  };
 }
 
 export interface components {
   schemas: {
-    IUserWithId: (components['schemas']['Partial<Pick<IUser,"id">>'] | string) & { [key: string]: unknown }
+    IUserWithId: (components["schemas"]['Partial<Pick<IUser,"id">>'] | string) & { [key: string]: unknown };
     'Partial<Pick<IUser,"id">>': {
-      id?: number
-    } & { [key: string]: unknown }
+      id?: number;
+    } & { [key: string]: unknown };
     IUserWithName: {
-      name: string
-    } & { [key: string]: unknown }
+      name: string;
+    } & { [key: string]: unknown };
     IUser: {
-      id: number
-      name?: string
-    } & { [key: string]: unknown }
-  }
+      id: number;
+      name?: string;
+    } & { [key: string]: unknown };
+  };
 }
 
 export interface operations {
   /** UserController.getUser2 */
-  'UserController.getUser2.DjHhjSamaD': {
+  "UserController.getUser2.DjHhjSamaD": {
     parameters: {
       query: {
-        param1?: number
-        param2?: (string | components['schemas']['IUserWithId']) & { [key: string]: unknown }
-        param3?: (string | components['schemas']['IUserWithName']) & { [key: string]: unknown }
-      }
-    }
+        param1?: number;
+        param2?: (string | components["schemas"]["IUserWithId"]) & { [key: string]: unknown };
+        param3?: (string | components["schemas"]["IUserWithName"]) & { [key: string]: unknown };
+      };
+    };
     responses: {
       /** Successful response */
       200: {
         content: {
-          'application/json': unknown
-        }
-      }
-    }
-  }
+          "application/json": unknown;
+        };
+      };
+    };
+  };
 }
 
 export interface external {}

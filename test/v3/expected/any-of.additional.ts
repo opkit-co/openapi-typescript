@@ -4,27 +4,27 @@
  */
 
 export interface paths {
-  '/cats': {
+  "/cats": {
     post: {
       responses: {
         200: {
           content: {
-            'application/json': {
-              id: string
-              name: string
+            "application/json": {
+              id: string;
+              name: string;
               colors: (
                 | string[]
                 | {
-                    id: string
-                    name: string
+                    id: string;
+                    name: string;
                   }[]
-              ) & { [key: string]: unknown }
-            }
-          }
-        }
-      }
-    }
-  }
+              ) & { [key: string]: unknown };
+            };
+          };
+        };
+      };
+    };
+  };
 }
 
 export interface components {}

@@ -4,19 +4,19 @@
  */
 
 export interface paths {
-  readonly '/test': {
+  readonly "/test": {
     readonly get: {
       readonly parameters: {
         readonly query: {
-          readonly isEnabled: boolean
-          readonly count: number
-        }
-      }
+          readonly isEnabled: boolean;
+          readonly count: number;
+        };
+      };
       readonly responses: {
-        readonly 200: unknown
-      }
-    }
-  }
+        readonly 200: unknown;
+      };
+    };
+  };
 }
 
 export interface components {
@@ -26,14 +26,14 @@ export interface components {
        * @default false
        * @example false
        */
-      readonly isEnabled?: boolean
+      readonly isEnabled?: boolean;
       /**
        * @default 0
        * @example 0
        */
-      readonly count?: number
-    }
-  }
+      readonly count?: number;
+    };
+  };
 }
 
 export interface operations {}

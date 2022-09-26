@@ -4,30 +4,30 @@
  */
 
 export type paths = {
-  '/cats': {
+  "/cats": {
     post: {
       responses: {
         200: {
           content: {
-            'application/json': {
-              id: string
-              name: string
+            "application/json": {
+              id: string;
+              name: string;
               colors:
                 | string[]
                 | {
-                    id: string
-                    name: string
-                  }[]
-            }
-          }
-        }
-      }
-    }
-  }
-}
+                    id: string;
+                    name: string;
+                  }[];
+            };
+          };
+        };
+      };
+    };
+  };
+};
 
-export type components = {}
+export type components = {};
 
-export type operations = {}
+export type operations = {};
 
-export type external = {}
+export type external = {};
