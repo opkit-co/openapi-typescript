@@ -1,12 +1,11 @@
 {
-  "name": "openapi-typescript",
+  "name": "@opkit/openapi-typescript",
   "description": "Generate TypeScript types from Swagger OpenAPI specs",
-  "version": "5.4.0",
+  "version": "1.0.0",
   "engines": {
     "node": ">= 14.0.0",
     "npm": ">= 7.0.0"
   },
-  "author": "drew@pow.rs",
   "license": "MIT",
   "bin": {
     "openapi-typescript": "bin/cli.js"
@@ -19,10 +18,6 @@
     "dist",
     "src"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/drwpow/openapi-typescript"
-  },
   "keywords": [
     "swagger",
     "typescript",
@@ -34,19 +29,20 @@
     "openapi 3",
     "node"
   ],
-  "bugs": {
-    "url": "https://github.com/drwpow/openapi-typescript/issues"
+  "publishConfig": {
+    "access": "restricted",
+    "scope": "@opkit"
   },
-  "homepage": "https://github.com/drwpow/openapi-typescript#readme",
   "scripts": {
-    "build": "del dist && tsc",
-    "format": "npm run prettier -w .",
-    "lint": "eslint .",
-    "prepare": "npm run build",
-    "pregenerate": "npm run build",
-    "test": "mocha --recursive --timeout 30000",
-    "test:coverage": "nyc --reporter=lcov mocha --recursive --timeout 30000",
-    "version": "npm run build"
+    "build": "rm -rf dist && ./node_modules/.bin/tsc",
+    "format": "node_modules/.bin/prettier -w .",
+    "lint": "node_modules/.bin/eslint .",
+    "prepare": "yarn build",
+    "pregenerate": "yarn build",
+    "test": "node_modules/.bin/mocha --recursive --timeout 30000",
+    "test:coverage": "nyc --reporter=lcov node_modules/.bin/mocha --recursive --timeout 30000",
+    "version": "yarn build",
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
