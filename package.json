@@ -1,7 +1,7 @@
 {
   "name": "@opkit/openapi-typescript",
   "description": "Generate TypeScript types from Swagger OpenAPI specs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "node": ">= 14.0.0"
   },
